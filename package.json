@@ -1,0 +1,15 @@
+{
+  "name": "shared-mailbox-migration-planner",
+  "version": "1.1.3",
+  "private": true,
+  "description": "Work out license needs for mailboxes converted to shared mailboxes: the 50 GB limit, archives and litigation hold; flag missing owners and delegates.",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://sistem.eretek.com/en/tools/shared-mailbox-migration-planner",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "test": "node test/run.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

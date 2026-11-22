@@ -1,0 +1,58 @@
+{
+ "tests": [
+  {
+   "in": {
+    "csv": "mailbox,size_gb,hold,owner\na@x.com,10,unknown,Ali"
+   },
+   "v": {
+    "items": [
+     {
+      "lic": "verify"
+     }
+    ]
+   }
+  },
+  {
+   "in": {
+    "csv": "mailbox,size_gb,hold,owner\na@x.com,51,no,Ali"
+   },
+   "v": {
+    "items": [
+     {
+      "lic": "yes"
+     }
+    ]
+   }
+  },
+  {
+   "in": {
+    "csv": "mailbox,size_gb,archive_gb,hold,owner\na@x.com,10,1,no,Ali"
+   },
+   "v": {
+    "items": [
+     {
+      "lic": "yes"
+     }
+    ]
+   }
+  },
+  {
+   "in": {
+    "csv": "mailbox,size_gb,hold,owner\na@x.com,10,no,Ali"
+   },
+   "v": {
+    "items": [
+     {
+      "lic": "no"
+     }
+    ]
+   }
+  },
+  {
+   "in": {
+    "csv": "mailbox,hold\na,no"
+   },
+   "err": "csv"
+  }
+ ]
+}
